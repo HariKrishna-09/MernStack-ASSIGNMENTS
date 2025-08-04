@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recharge & Bill Payment Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0e6eb;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px 20px;
+      width: 420px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      text-align: center;
+      width: 90px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .icon:hover {
+      background-color: #f0f8ff;
+      transform: scale(1.05);
+    }
+
+    .icon span {
+      font-size: 30px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .promo {
+      background-color: #00aee0;
+      color: white;
+      padding: 15px;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .promo.dark {
+      background-color: #001f4f;
+    }
+
+    .promo-btn {
+      background-color: white;
+      color: #00aee0;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .promo-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .cashback-icon {
+      background: white;
+      color: #00aee0;
+      border-radius: 50%;
+      padding: 8px 10px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Recharges Card -->
+  <div class="card">
+    <h2>Recharges</h2>
+    <div class="icons">
+      <div class="icon">
+        <span>📱</span>
+        <div>Mobile<br>Recharge</div>
+      </div>
+      <div class="icon">
+        <span>🚗</span>
+        <div>FASTag<br>Recharge</div>
+      </div>
+      <div class="icon">
+        <span>📡</span>
+        <div>DTH<br>Recharge</div>
+      </div>
+      <div class="icon">
+        <span>🔲</span>
+        <div>View All<br>Products</div>
+      </div>
+    </div>
+    <div class="promo">
+      <div>
+        <span class="cashback-icon">💸</span>
+        <strong>Do Mobile Recharge</strong> 
+        <break>and Win ₹100 cashback.</break>
+      </div>
+      <a href="#" class="promo-btn">Recharge Now →</a>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <h2>Bill Payments</h2>
+    <div class="icons">
+      <div class="icon">
+        <span>💡</span>
+        <div>Electricity<br>Bill</div>
+      </div>
+      <div class="icon">
+        <span>🏛</span>
+        <div>LIC /<br>Insurance</div>
+      </div>
+      <div class="icon">
+        <span>💼</span>
+        <div>Loan EMI<br>Payment</div>
+      </div>
+      <div class="icon">
+        <span>🔲</span>
+        <div>View All<br>Products</div>
+      </div>
+    </div>
+    <div class="promo dark">
+      <div>
+        <span class="cashback-icon">📶</span>
+        <strong>Broadband Recharge</strong><br>    Pay now & get rewarded
+      </div>
+      <a href="#" class="promo-btn">Pay Now →</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
